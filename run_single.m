@@ -30,14 +30,11 @@ k_P = 1.0;
 % scaling factor for minimizing the reactive power
 k_Q = 0.0;
 
-% scaling factor for minimizing the apparent power
-k_S = 0.0;
-
-% numerical tolerances (see definition below)
+% definition of the numerical tolerances
 [tol_eig, tol_opt] = get_tolerance();
 
-% load the problem definition (see definition below)
-[trf_mat, op_mat] = get_problem(k_P, k_Q, k_S);
+% definition of the transformer and the power flow
+[trf_mat, op_mat] = get_problem(k_P, k_Q);
 
 % check that the transformer design is valid
 get_design_check(trf_mat, op_mat);

@@ -1,5 +1,5 @@
 function run_sweep()
-% Optimal current sharing with loss and reactive power minization.
+% Optimal current sharing with loss and reactive power minimization.
 %
 % The optimal current sharing problem is solved with two methods:
 %     - Eigenvalue method.
@@ -26,12 +26,12 @@ k_P_vec = linspace(1.0, 0.3, n_sweep);
 % scaling factor for minimizing the reactive power
 k_Q_vec = linspace(0.0, 0.7, n_sweep);
 
-% numerical tolerances (see definition below)
+% definition of the numerical tolerances
 [tol_eig, tol_opt] = get_tolerance();
 
 % sweep the solution for different objective functions
 for i=1:n_sweep
-    % load the problem definition (see definition below)
+    % definition of the transformer and power flow
     [trf_mat, op_mat] = get_problem(k_P_vec(i), k_Q_vec(i));
 
     % check that the transformer design is valid

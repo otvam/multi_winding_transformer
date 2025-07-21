@@ -8,7 +8,7 @@ From the **impedance matrix**, the **optimal currents** (amplitudes and phases) 
 A **full description** of the optimal operation of **multi-port transformers** can be found in:
 
 * **Optimal Current Distribution in Multi-Winding Transformers for Isolated and Wireless Power Transfer**
-* **K. Datta, Y. Wu, C. R. Sullivan and J. T. Stauth**
+* **K. Datta, Y. Wu, C. R. Sullivan, and J. T. Stauth**
 * **https://doi.org/10.1109/OJPEL.2025.3590020**
 * **IEEE OJPEL 2025**
 
@@ -25,7 +25,9 @@ The **numerical solver** features several advantages compared to the **eigenvalu
 ## Main Files
 
 * [run_single.m](run_single.m) - Solve the optimal current sharing problem for a multi-winding transformer 
-* [run_sweep.m](run_sweep.m) - Optimal current sharing with loss and reactive power minization
+* [run_sweep.m](run_sweep.m) - Optimal current sharing with loss and reactive power minimization
+* [get_problem.m](get_problem.m) - Definition of the transformer and the power flow
+* [get_tolerance.m](get_tolerance.m) - Definition of the numerical tolerance
 
 ## Compatibility
 
