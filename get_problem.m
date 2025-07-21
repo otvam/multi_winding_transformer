@@ -1,4 +1,5 @@
-function [trf, op] = get_problem(k_P, k_Q, k_S)
+function [trf, op] = get_problem(k_P, k_Q ...
+    )
 % Definition of the transformer and power flow.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Thomas Guillod - Dartmouth College.
@@ -31,9 +32,8 @@ trf.idx_1 = idx_1; % indices of the primary windings
 trf.idx_2 = idx_2; % indices of the secondary windings
 
 % assign operation
-op.k_P = k_P; % scaling factor for minimizing the total losses
-op.k_Q = k_Q; % scaling factor for minimizing the reactive power
-op.k_S = k_S; % scaling factor for minimizing the apparent power
+op.k_P = k_P; % scaling factor for minimizing the total losses (only used for the numerical solver)
+op.k_Q = k_Q; % scaling factor for minimizing the reactive power (only used for the numerical solver)
 op.P_trg = P_trg; % power flow value
 op.P_flow = P_flow; % coil where the power flow is imposed
 op.idx_fix = idx_fix; % terminal where the phase is imposed

@@ -50,11 +50,8 @@ fprintf('        P = %s W\n', get_array(real(sol.S), '%+.5f'))
 fprintf('        Q = %s Var\n', get_array(imag(sol.S), '%+.5f'))
 fprintf('        S_1 = %+.5f W / %+.5f VAr / %+.5f VA\n', real(sol.S_1), imag(sol.S_1), abs(sol.S_1))
 fprintf('        S_2 = %+.5f W / %+.5f VAr / %+.5f VA\n', real(sol.S_2), imag(sol.S_2), abs(sol.S_2))
-fprintf('        S_sum = %+.5f W / %+.5f VAr / %+.5f VA\n', real(sol.S_sum), imag(sol.S_sum), abs(sol.S_sum))
-fprintf('        S_abs = %+.5f VA\n', sol.S_abs)
+fprintf('        S_tot = %+.5f W / %+.5f VAr / %+.5f VA\n', real(sol.S_tot), imag(sol.S_tot), abs(sol.S_tot))
 fprintf('        eta = %+.5f %%\n', 1e2.*sol.eta)
-fprintf('        pf_sum = %+.5f %%\n', 1e2.*sol.pf_sum)
-fprintf('        pf_abs = %+.5f %%\n', 1e2.*sol.pf_abs)
 
 end
 

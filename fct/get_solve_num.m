@@ -14,7 +14,6 @@ idx_2 = trf.idx_2;
 % extract values
 k_P = op.k_P;
 k_Q = op.k_Q;
-k_S = op.k_S;
 P_trg = op.P_trg;
 P_flow = op.P_flow;
 idx_fix = op.idx_fix;
@@ -53,7 +52,7 @@ if use_quadratic==true
         fct_hes = [];
     end
 else
-    fct_obj = @(x) get_obj_direct(x, R, X, idx_1, idx_2, k_P, k_Q, k_S);
+    fct_obj = @(x) get_obj_direct(x, R, X, idx_1, idx_2, k_P, k_Q);
     fct_con = @(x) get_con_direct(x, R, X, idx_1, idx_2, P_flow, P_trg);
     fct_hes = [];
 end
@@ -130,7 +129,7 @@ solver.n_eval = output.funcCount;
 
 end
 
-function y = get_obj_direct(x, R, X, idx_1, idx_2, k_P, k_Q, k_S)
+function y = get_obj_direct(x, R, X, idx_1, idx_2, k_P, k_Q)
 
 % get the currents
 I = get_decode(x, idx_1, idx_2);
@@ -147,10 +146,9 @@ S = 0.5.*(V.*conj(I));
 % compute the power metrics
 P = sum(real(S));
 Q = sum(imag(S));
-S = sum(abs(S));
 
 % compute objective
-y = k_P.*P+k_Q.*Q+k_S.*S;
+y = k_P.*P+k_Q.*Q;
 
 end
 

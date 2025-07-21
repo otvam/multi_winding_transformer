@@ -26,9 +26,11 @@ tol_opt.fix_equality = false; % set (or not) the equality constraint for fmincon
 tol_opt.fix_inequality = false; % set (or not) the inequality constraint for fmincon
 tol_opt.k_bounds = 10.0; % factor for determining the bounds (relative to initial guess)
 tol_opt.solver_opt = solver_opt; % options for the fmincon solver
+
+% use the quadratic solver or the direct global solver
 switch solver
     case 'global'
-        tol_opt.use_quadratic = false; % use (or not) the quadratic function
+        tol_opt.use_quadratic = false; % use (or not) the quadratic functions
         tol_opt.use_bounds = true; % use (or not) the bounds for fmincon
         tol_opt.n_start = 10; % number of starting points for global
     case 'quadratic'

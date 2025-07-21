@@ -1,5 +1,5 @@
 function run_single()
-% Solve the optimal current sharing problem for a multi-winding transformer.
+% Optimal current sharing problem for a multi-winding transformer.
 %
 % In a first step, the multi-winding transformer is reduced:
 %     - The different primary windings are series connected.
