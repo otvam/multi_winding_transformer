@@ -1,6 +1,9 @@
 function [trf, op] = get_matrix_reduce(trf, op)
 % Reduce a multi-winding transformer into a two-winding transformer.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % extract values
 R = trf.R;

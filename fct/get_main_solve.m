@@ -1,6 +1,9 @@
 function [sol_eig, sol_num, I_num] = get_main_solve(tag, trf, op, tol_eig, tol_opt)
 % Get the optimal current sharing with the eigenvalue and numerical methods.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % get the eigenvalue solution
 I_eig = get_solve_eig(trf, tol_eig);

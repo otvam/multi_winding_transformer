@@ -16,6 +16,9 @@ function run_single()
 %     - Eigenvalue method (neglect the mutual resistances).
 %     - Numerical solver (include the mutual resistances).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % add the functions to the path
 addpath('fct')

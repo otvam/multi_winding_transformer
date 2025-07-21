@@ -1,6 +1,9 @@
 function I = get_power_flow(I, trf, op)
 % Fix the power flow direction and magnitude.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % extract values
 R = trf.R;

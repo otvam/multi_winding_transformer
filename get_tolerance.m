@@ -1,6 +1,9 @@
 function [tol_eig, tol_opt] = get_tolerance()
 % Definition of the numerical tolerance.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Thomas Guillod - Dartmouth College.
+%    2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % relative tolerance for the detecting common eigenvalues
 tol_eig = 1e-6;

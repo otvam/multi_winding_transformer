@@ -1,6 +1,9 @@
 function get_design_check(trf, op)
 % Check the validity of a transformer design.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % extract values
 R = trf.R;

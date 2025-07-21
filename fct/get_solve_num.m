@@ -1,6 +1,9 @@
 function [I, solver] = get_solve_num(I_init, trf, op, tol_opt)
 % Get the optimal currents with the a numerical solver (include the mutual resistances).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % extract values
 R = trf.R;

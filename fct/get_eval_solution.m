@@ -1,6 +1,9 @@
 function sol = get_eval_solution(I, trf)
 % Compute the problem solution (current, voltage, and power).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % extract values
 R = trf.R;

@@ -1,6 +1,9 @@
 function [trf, op] = get_problem(k_P, k_Q, k_S)
 % Definition of the transformer and power flow.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % power flow value
 P_trg = 1.0;

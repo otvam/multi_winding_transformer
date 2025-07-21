@@ -1,6 +1,9 @@
 function I = get_solve_eig(trf, tol_eig)
 % Get the optimal currents with the eigenvalue method (neglect the mutual resistances).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % extract values
 R = trf.R;

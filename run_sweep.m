@@ -9,6 +9,9 @@ function run_sweep()
 %         - Include the mutual resistances.
 %         - Minimize the losses and reactive power.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thomas Guillod - Dartmouth College.
+% 2025 - MIT License.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % add the functions to the path
 addpath('fct')
